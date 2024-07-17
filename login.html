@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - glossier</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- antes del header tendremos este div para anuncios de la marca, lanzamientos de productos, etc-->
+    
+        <a href="##" class="Span-message">Limited Edition Balm Dotcom Quintet: 5 Flavors + sticker sheet!</a>
+    
+
+
+        <header class="Header">
+    
+            <!---
+               Seccion del encabezado de la página
+               Descripción: En este bloque tendremos el header que contendrá; h1 que es el logo de la marca,
+               nav que contiene seis enlaces que nos llevarán a distintas partes de la página.    
+            ---->
+    
+    
+            <nav class="Header-nav">
+                <!-- tres enlaces en forma de botón que tendremos al lado izquierdo del header -->
+                <ul class="Header-ul">
+                    <li class="Header-btn --Activoshop">
+                        <a href=""class="Header-btn --Activo" onclick="">shop
+                        </a>
+                    </li>
+                    <li class="Header-li">
+                        <a href="" class="Header-btn">about
+                            
+                        </a>
+                    </li>
+                  
+                    
+                </ul>
+    
+                <h1 class="Header-h1"> 
+                    <!-- logo de la marca será el h1, irá al medio del header-->
+                    
+                    <a href="##" class="Header-a">
+                        <img src="assets/logo.png" alt="##" class="Header-img">
+                    </a>
+                </h1>
+    
+                <!-- tres enlaces en forma de botón que tendremos al lado derecho del header -->
+                <ul class="Header-ul">
+                    
+                    <li class="Header-li">
+                        <a href="" class="Header-btn">log in
+                            
+                        </a>
+                    </li>
+                    <li class="Header-btn --Visible">
+                        <a href="" class="Header-btn --Visible">bag
+                            
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <section class="Header-bag">
+                <!-- esta seccion se abrirá cuando pulse el btn de bag
+                asi los usarios podrán visualizar el carrito de compras-->
+    
+                <div class="Header-bagTop">
+                    
+                    <div class="Header-itemClose">
+                        <div class="Header-nItems">1 item</div>
+                        <button class="Header-closeBag">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Header-svgBag" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                           </svg>
+                        </button>
+                    </div>
+    
+    
+                    <div class="Header-item">
+                        <div class="Header-bagLeft">
+                            <img src="##" alt="" class="Header-imgItem">
+                            <div class="Header-itemInfo">
+                                <h2 class="Header-h2Bag">glossier you</h2>
+                                <div class="Header-btnBag">
+                                  <button class="Header-btnSubtract">-</button>
+                                  <span class="Header-btnCounter">0</span>
+                                  <button class="Header-btnAdd">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="Header-price">$20.00</div>
+                    
+                    </div>
+                </div>
+                    
+              
+                <div class="Header-suggest">
+                 <p class="Header-pSuggest">add to your GLOSSIER collection</p>
+                    <div class="Header-recomendation">
+                        <div class="Header-cardRecom">
+                            <div class="Header-recomInfo">
+                                <a href="" class="Header-recomA">
+                                    <img src="##" alt="" class="Header-recomImg">
+                                </a>
+                                <h2 class="Header-h2Bag">product name</h2>
+                            </div>
+                            <button class="Header-add">ADD - $20.00</button>
+                        </div>
+                       
+                        <div class="Header-buy">
+                            <div class="Header-divSubtotal">subtotal</div>
+                            <div class="Header-div">$20.00</div>
+                        </div>
+    
+                        <div class="Header-btnCheckout">
+                            <a href="" class="Header-btnBuy">CHECKOUT</a>
+                        </div>
+    
+                        
+                    </div>
+    
+                </div>
+    
+            </section>
+    
+            <div class="Header-lightbox">
+    
+                <!-- esta seccion se abrirá cuando haga hover en el .Header-btn (boton shop), dentro tendremos una tabs con 
+                    tres categorias de productos, un nav dentro con fotos para cada una de las categorias 
+                    y un button de shop now -->
+    
+               <div class="Header-tabs">
+                 <!--- dentro de este div bloque tendremos la lista de las categorias -->
+                    <ul class="Header-ulTabs">
+                        <li class="Header-liTabs">
+                            <button class="Header-btnTabs isActive">skincare</button>
+                        </li>
+                        <li class="Header-liTabs">
+                            <button class="Header-btnTabs">makeup</button>
+                        </li>
+                        <li class="Header-liTabs">
+                            <button class="Header-btnTabs">fragance</button>
+                        </li>
+                   </ul>
+               </div> 
+               
+    
+    
+    
+                <div class="Header-tabsContainer"> 
+                    <!-- dentro de este div bloque tendremos un nav que contiene los enlaces 
+                    con imagenes de los productos de cada categoria y un h2 para cada nombre de 
+                    los productos, este se abrirá cuando hagamos click en shop -->
+                  
+                    <nav class="Header-navTabs isActive">
+    
+                       <div class="Header-card">
+                            <a href="##" class="Header-aCard">
+                              <img src="assets/glossier-bdc-strawberry-carousel-1 2.jpeg" alt="" class="Header-imgCard">
+                            </a>
+                            <section class="Header-bottomCard">
+                               <h2 class="Header-h2">Balm Dotcom</h2>
+                               <p class="Header-pCard">The original formula of our lip balm</p>
+                            </section>
+                            
+                        </div>
+    
+                        <div class="Header-card">
+                            <a href="##" class="Header-aCard">
+                              <img src="assets/glossier-skincare-futuredew-carousel-01 2.jpeg" alt="" class="Header-imgCard">
+                            </a>
+                            <section class="Header-bottomCard">
+                              <h2 class="Header-h2">Futuredew</h2>
+                               <p class="Header-pCard">An instant, dewy glow that lasts.</p>
+                            </section>
+                            
+                        </div>
+                        
+                        <div class="Header-card">
+                            <a href="##" class="Header-aCard">
+                              <img src="assets/glossier-super-bounce-carousel-01_76a56806-4efa-4df0-9beb-2f030da73fa3.avif" alt="" class="Header-imgCard">
+                            </a>
+                            <section class="Header-bottomCard">
+                              <h2 class="Header-h2">Super Bounce</h2>
+                              <p class="Header-pCard">A refreshing Hyaluronic Acid serum.</p>
+                            </section>
+                            
+                        </div>
+                        <a href="" class="Header-view">view all</a>
+                    </nav>
+    
+                    <nav class="Header-navTabs">
+    
+                        <div class="Header-card">
+                            <a href="##" class="Header-aCard">
+                               <img src="assets/glossier-ultralip-pony-carousel-01.jpeg" alt="" class="Header-imgCard">
+                            </a>
+                            <section class="Header-bottomCard">
+                               <h2 class="Header-h2">Ultralip</h2>
+                                <p class="Header-pCard">The (cashmere) sweatpants of lipstick.</p>
+                            </section>
+                        </div>
+    
+                        <div class="Header-card">
+                            <a href="##" class="Header-aCard">
+                               <img src="assets/glossier-boy-brow-black-carousel-01.jpeg" alt="" class="Header-imgCard">
+                            </a>
+                            <section class="Header-bottomCard">
+                               <h2 class="Header-h2">Boy Brow</h2>
+                                <p class="Header-pCard">The original, every-day essential for all brows.</p>
+                            </section>
+                        </div>
+    
+                        <div class="Header-card">
+                            <a href="##" class="Header-aCard">
+                               <img src="assets/glossier-lashslick-black-carousel-01.jpeg" alt="" class="Header-imgCard">
+                            </a>
+                            <section class="Header-bottomCard">
+                               <h2 class="Header-h2">Lash Slick</h2>
+                                <p class="Header-pCard">Extensions without the extensions.</p>
+                            </section>
+                        </div> 
+                        <a href="" class="Header-view">view all</a>
+                    </nav> 
+    
+                    <nav class="Header-navTabs">
+    
+                        <div class="Header-card">
+                            <a href="##" class="Header-aCard">
+                               <img src="assets/glossier-you-50ml-carousel-01.avif" alt="" class="Header-imgCard">
+                            </a>
+                            <section class="Header-bottomCard">
+                               <h2 class="Header-h2">Glossier You</h2>
+                                <p class="Header-pCard">The ultimate personal fragrance.</p>
+                            </section>
+                        </div>
+    
+                        <div class="Header-card">
+                            <a href="##" class="Header-aCard">
+                               <img src="assets/glossier-you-solid-carousel-01_0a1d59e5-c4e8-4d18-b59d-4482a0f4c1f5.avif" alt="" class="Header-imgCard">
+                            </a>
+                            <section class="Header-bottomCard">
+                               <h2 class="Header-h2">Glossier You Solid</h2>
+                                <p class="Header-pCard">Always with you.</p>
+                            </section>
+                        </div>
+    
+                        <div class="Header-card">
+                            <a href="##" class="Header-aCard">
+                               <img src="assets/glossier-candle-you-carousel-01_8f3ee16e-d330-44ca-9fe3-05c002c16c6b.avif" alt="" class="Header-imgCard">
+                            </a>
+                            <section class="Header-bottomCard">
+                               <h2 class="Header-h2">Glossier Candles</h2>
+                                <p class="Header-pCard">Signature scents for your space.</p>
+                            </section>
+                        </div>
+                        <a href="" class="Header-view">view all</a>
+                    </nav> 
+                </div> 
+            </div>
+                
+                
+        </header>  
+    
+</body>
+</html>

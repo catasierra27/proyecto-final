@@ -1,0 +1,514 @@
+/* Reset CSS / Normalizador */
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing:border-box;
+}
+li{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    display: block;
+}
+p a {
+    display: inline;
+}
+img , svg{
+    display: block;
+    width: 100%;
+    height: initial;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , p , strong , em , mark , a{
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    color:inherit;
+    text-decoration: none;
+    background-color: inherit;
+}
+button{
+    display: block;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+}
+:root{
+    font-size: 100%;
+    --color-primary : rgb(245, 218, 223);
+    --color-secondary : #f2f2f2;
+    
+}
+body{
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+
+
+
+.Header{
+   /* background-color: red; */
+}
+
+.Span-message{
+    width: 100%;
+    min-height: 1.25rem;
+    background-color: var(--color-secondary);
+    margin-bottom: .9375rem;
+    padding: .5625rem;
+    border-radius: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .6875rem;
+    
+}
+
+.Header-nav{
+    background-color: var(--color-primary);
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+} 
+    
+    
+.Header-ul{
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+   
+    /* padding: 1.875rem; */
+}
+.Header-li{
+ 
+    
+}
+.Header-btn{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    
+}
+.Header-h1{}
+.Header-a{}
+.Header-img{
+    width: 12rem;
+}
+
+.Header-lightbox{
+    background-color: var(--color-primary);
+    width: 100%;
+    min-height: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative;
+    display: none;
+    z-index: 7;
+    
+}
+
+
+.Header-lightbox.isVisible{
+    display: block;
+    top: 0;
+    z-index: 7;
+    width: 100%;
+    min-height: 30%;
+}
+
+/* .Header-tabs{
+    margin-bottom: 20px;
+} */
+.Header-ulTabs{
+    /* background-color: cadetblue; */
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+    padding: 20px;
+    width: 100%;
+    min-height: 100%;
+}
+.Header-liTabs{
+    /* background-color: chocolate; */
+    font-weight: bold;
+    
+}
+.Header-btnTabs{
+    font-size: .8125rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    
+    
+    
+}
+
+.Header-btnTabs.isActive{
+    color: black;
+    text-decoration: underline;
+    
+}
+
+.Header-btnTabs:hover{
+    text-decoration: underline;
+
+}
+.Header-tabsContainer{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+   
+    
+    
+    position: relative;
+    
+   
+}
+.Header-navTabs{
+    background-color: var(--color-primary);
+    width: 100%;
+    min-height: 100%;
+    
+    
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    
+   
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    
+}
+
+.Header-navTabs.isActive{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    opacity: 1;
+    width: 100%;
+    min-height: 100%;
+    padding: 3rem;
+    
+}
+
+
+.Header-card{
+    background-color: #F7F7F7;
+    
+    border-radius: 1rem;
+    width: 100%;
+    min-height: 100%;
+    padding: 2rem;
+    
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    
+    
+}
+.Header-aCard{
+    /* background-color: #444444; */
+    width: 80%;
+    min-height: 80%;
+}
+.Header-imgCard{
+    width: 100%;
+    min-height: 100%;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+
+.Header-bottomCard{
+    /* background-color: antiquewhite; */
+    width: 80%;
+    min-height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+}
+
+.Header-h2{
+    width: 70%;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    /* background-color: aquamarine; */
+}
+.Header-pCard{
+    font-weight: lighter;
+    font-size: 12px;
+
+}
+.Header-view{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 7px 25px;
+    border-radius: 1.5rem;
+    border: 2px solid black; /* Borde negro */
+    background-color: rgba(244, 244, 244, 0.8); /* Fondo transparente */
+    
+
+    
+    
+}
+
+
+
+.Header-bag{
+    font-weight: 450;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 50%; /* Ocupa la mitad del ancho de la pantalla */
+    height: 100%; /* Opcional, ocupa toda la altura de la pantalla */
+    background-color: var(--color-secondary);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra opcional para efecto */
+    display: none;
+}
+.Header-bag.isVisible{
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    width: 50%; /* Ocupa la mitad del ancho de la pantalla */
+    height: 100%; /* Opcional, ocupa toda la altura de la pantalla */
+    background-color: var(--color-primary);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+
+}
+.Header-bagTop{}
+.Header-nItems{
+    padding: 20px;
+    text-align: center;
+    
+    width: 100%;
+    min-height: 10px;
+    border-bottom: var(--color-secondary) dotted 1px;
+}
+.Header-itemClose{
+    display: flex;
+    flex-flow: row nowrap;
+    
+    
+}
+.Header-item{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: var(--color-secondary) dotted 1px;
+    /* background-color: blueviolet; */
+}
+.Header-bagLeft{
+    /* background-color: antiquewhite; */
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.Header-imgItem{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-secondary);
+    border-radius: 1rem;
+    
+}
+.Header-itemInfo{
+    width: 100%;
+    min-height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: 1.25rem;
+}
+.Header-h2Bag{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.Header-btnBag{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10rem;
+    padding: 2px 12px 2px 12px;
+}
+.Header-btnAdd{
+    width: 2rem;
+    height: 2rem;
+    font-size: 15px;
+    border-radius: 2rem;
+    background-color: var(--color-secondary); 
+}
+.Header-btncounter{
+    font-weight: normal;
+}
+.Header-btnSubtract{
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: var(--color-secondary);
+
+}
+.Header-price{
+    align-items: center;
+}
+
+
+.Header-suggest{
+    /* background-color: var(--color-secondary); */
+    border-radius: 1rem;
+    width: 100%;
+    text-align: center;
+    
+}
+.Header-psuggest{
+    
+}
+.Header-recomendation{
+    margin-top: 1rem;
+   
+}
+.Header-cardRecom{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: var(--color-secondary);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.Header-recomInfo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Header-recomImg{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-secondary);
+    
+    border-radius: 1rem;
+    margin-right: 1rem;
+
+}
+.Header-h2Bag{}
+.Header-add{
+    
+    font-size: 1rem;
+    
+    
+    
+
+}
+.Header-buy{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.Header-divSubtotal{
+    font-weight: normal;
+}
+.Header-btnBuy{
+    font-size: 1.3rem;
+    width: 70%;
+    padding: 7px 25px;
+    border-radius: 1.5rem;
+    border: 2px solid black; /* Borde negro */
+    background-color: rgba(244, 244, 244, 0.8); /* Fondo transparente */
+    color: black; /* Color de texto negro */
+    cursor: pointer; /* Cambiar cursor a puntero al pasar el mouse */
+    position: relative; /* Posición relativa para el pseudo-elemento */
+    overflow: hidden; /* Oculta el desbordamiento del pseudo-elemento */
+    transition: color 0.5s ease; /* Transición de color suave */
+    z-index: 0;
+}
+.Header-btnBuy::before{
+    content: ''; /* Pseudo-elemento para el efecto de transición */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Color de fondo para el efecto */
+    transform: translateY(-100%); /* Empieza fuera de la vista hacia arriba */
+    transition: transform 0.3s ease; /* Transición suave de transform */
+    z-index: -1; 
+
+}
+.Header-btnBuy:hover::before{
+    transform: translateY(0);
+}
+
+.Header-btnBuy:hover{
+    color: var(--color-primary); /* Cambiar el color del texto al hacer hover */
+    border-color: var(--color-primary);
+}
+
+.Header-btnCheckout{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}

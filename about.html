@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - glossier</title>
+    <link rel="icon" href="assets/glossierlogosoloG.svg" >
+    <link rel="stylesheet" href="css/about.css">
+    <script src="js/about.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- antes del header tendremos este div para anuncios de la marca, lanzamientos de productos, etc-->
+    
+    <a href="##" class="Span-message">Limited Edition Balm Dotcom Quintet: 5 Flavors + sticker sheet!</a>
+    
+
+
+    <header class="Header">
+
+        <!---
+           Seccion del encabezado de la página
+           Descripción: En este bloque tendremos el header que contendrá; h1 que es el logo de la marca,
+           nav que contiene seis enlaces que nos llevarán a distintas partes de la página.    
+        ---->
+
+
+        <nav class="Header-nav">
+            <!-- tres enlaces en forma de botón que tendremos al lado izquierdo del header -->
+            <ul class="Header-ul">
+                <li class="Header-btn --Activoshop">
+                    <a href=""class="Header-btn --Activo" onclick="">shop
+                    </a>
+                </li>
+                <li class="Header-li">
+                    <a href="" class="Header-btn">about
+                        
+                    </a>
+                </li>
+              
+                
+            </ul>
+
+            <h1 class="Header-h1"> 
+                <!-- logo de la marca será el h1, irá al medio del header-->
+                
+                <a href="##" class="Header-a">
+                    <img src="assets/logo.png" alt="##" class="Header-img">
+                </a>
+            </h1>
+
+            <!-- tres enlaces en forma de botón que tendremos al lado derecho del header -->
+            <ul class="Header-ul">
+                
+                <li class="Header-li">
+                    <a href="" class="Header-btn">log in
+                        
+                    </a>
+                </li>
+                <li class="Header-btn --Visible">
+                    <a href="" class="Header-btn --Visible">bag
+                        
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="Header-bag">
+            <!-- esta seccion se abrirá cuando pulse el btn de bag
+            asi los usarios podrán visualizar el carrito de compras-->
+
+            <div class="Header-bagTop">
+                
+                <div class="Header-itemClose">
+                    <div class="Header-nItems">1 item</div>
+                    <button class="Header-closeBag">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Header-svgBag" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                       </svg>
+                    </button>
+                </div>
+
+
+                <div class="Header-item">
+                    <div class="Header-bagLeft">
+                        <img src="##" alt="" class="Header-imgItem">
+                        <div class="Header-itemInfo">
+                            <h2 class="Header-h2Bag">glossier you</h2>
+                            <div class="Header-btnBag">
+                              <button class="Header-btnSubtract">-</button>
+                              <span class="Header-btnCounter">0</span>
+                              <button class="Header-btnAdd">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="Header-price">$20.00</div>
+                
+                </div>
+            </div>
+                
+          
+            <div class="Header-suggest">
+             <p class="Header-pSuggest">add to your GLOSSIER collection</p>
+                <div class="Header-recomendation">
+                    <div class="Header-cardRecom">
+                        <div class="Header-recomInfo">
+                            <a href="" class="Header-recomA">
+                                <img src="##" alt="" class="Header-recomImg">
+                            </a>
+                            <h2 class="Header-h2Bag">product name</h2>
+                        </div>
+                        <button class="Header-add">ADD - $20.00</button>
+                    </div>
+                   
+                    <div class="Header-buy">
+                        <div class="Header-divSubtotal">subtotal</div>
+                        <div class="Header-div">$20.00</div>
+                    </div>
+
+                    <div class="Header-btnCheckout">
+                        <a href="" class="Header-btnBuy">CHECKOUT</a>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="Header-lightbox">
+
+            <!-- esta seccion se abrirá cuando haga hover en el .Header-btn (boton shop), dentro tendremos una tabs con 
+                tres categorias de productos, un nav dentro con fotos para cada una de las categorias 
+                y un button de shop now -->
+
+           <div class="Header-tabs">
+             <!--- dentro de este div bloque tendremos la lista de las categorias -->
+                <ul class="Header-ulTabs">
+                    <li class="Header-liTabs">
+                        <button class="Header-btnTabs isActive">skincare</button>
+                    </li>
+                    <li class="Header-liTabs">
+                        <button class="Header-btnTabs">makeup</button>
+                    </li>
+                    <li class="Header-liTabs">
+                        <button class="Header-btnTabs">fragance</button>
+                    </li>
+               </ul>
+           </div> 
+           
+
+
+
+            <div class="Header-tabsContainer"> 
+                <!-- dentro de este div bloque tendremos un nav que contiene los enlaces 
+                con imagenes de los productos de cada categoria y un h2 para cada nombre de 
+                los productos, este se abrirá cuando hagamos click en shop -->
+              
+                <nav class="Header-navTabs isActive">
+
+                   <div class="Header-card">
+                        <a href="##" class="Header-aCard">
+                          <img src="assets/glossier-bdc-strawberry-carousel-1 2.jpeg" alt="" class="Header-imgCard">
+                        </a>
+                        <section class="Header-bottomCard">
+                           <h2 class="Header-h2">Balm Dotcom</h2>
+                           <p class="Header-pCard">The original formula of our lip balm</p>
+                        </section>
+                        
+                    </div>
+
+                    <div class="Header-card">
+                        <a href="##" class="Header-aCard">
+                          <img src="assets/glossier-skincare-futuredew-carousel-01 2.jpeg" alt="" class="Header-imgCard">
+                        </a>
+                        <section class="Header-bottomCard">
+                          <h2 class="Header-h2">Futuredew</h2>
+                           <p class="Header-pCard">An instant, dewy glow that lasts.</p>
+                        </section>
+                        
+                    </div>
+                    
+                    <div class="Header-card">
+                        <a href="##" class="Header-aCard">
+                          <img src="assets/glossier-super-bounce-carousel-01_76a56806-4efa-4df0-9beb-2f030da73fa3.avif" alt="" class="Header-imgCard">
+                        </a>
+                        <section class="Header-bottomCard">
+                          <h2 class="Header-h2">Super Bounce</h2>
+                          <p class="Header-pCard">A refreshing Hyaluronic Acid serum.</p>
+                        </section>
+                        
+                    </div>
+                    <a href="" class="Header-view">view all</a>
+                </nav>
+
+                <nav class="Header-navTabs">
+
+                    <div class="Header-card">
+                        <a href="##" class="Header-aCard">
+                           <img src="assets/glossier-ultralip-pony-carousel-01.jpeg" alt="" class="Header-imgCard">
+                        </a>
+                        <section class="Header-bottomCard">
+                           <h2 class="Header-h2">Ultralip</h2>
+                            <p class="Header-pCard">The (cashmere) sweatpants of lipstick.</p>
+                        </section>
+                    </div>
+
+                    <div class="Header-card">
+                        <a href="##" class="Header-aCard">
+                           <img src="assets/glossier-boy-brow-black-carousel-01.jpeg" alt="" class="Header-imgCard">
+                        </a>
+                        <section class="Header-bottomCard">
+                           <h2 class="Header-h2">Boy Brow</h2>
+                            <p class="Header-pCard">The original, every-day essential for all brows.</p>
+                        </section>
+                    </div>
+
+                    <div class="Header-card">
+                        <a href="##" class="Header-aCard">
+                           <img src="assets/glossier-lashslick-black-carousel-01.jpeg" alt="" class="Header-imgCard">
+                        </a>
+                        <section class="Header-bottomCard">
+                           <h2 class="Header-h2">Lash Slick</h2>
+                            <p class="Header-pCard">Extensions without the extensions.</p>
+                        </section>
+                    </div> 
+                    <a href="" class="Header-view">view all</a>
+                </nav> 
+
+                <nav class="Header-navTabs">
+
+                    <div class="Header-card">
+                        <a href="##" class="Header-aCard">
+                           <img src="assets/glossier-you-50ml-carousel-01.avif" alt="" class="Header-imgCard">
+                        </a>
+                        <section class="Header-bottomCard">
+                           <h2 class="Header-h2">Glossier You</h2>
+                            <p class="Header-pCard">The ultimate personal fragrance.</p>
+                        </section>
+                    </div>
+
+                    <div class="Header-card">
+                        <a href="##" class="Header-aCard">
+                           <img src="assets/glossier-you-solid-carousel-01_0a1d59e5-c4e8-4d18-b59d-4482a0f4c1f5.avif" alt="" class="Header-imgCard">
+                        </a>
+                        <section class="Header-bottomCard">
+                           <h2 class="Header-h2">Glossier You Solid</h2>
+                            <p class="Header-pCard">Always with you.</p>
+                        </section>
+                    </div>
+
+                    <div class="Header-card">
+                        <a href="##" class="Header-aCard">
+                           <img src="assets/glossier-candle-you-carousel-01_8f3ee16e-d330-44ca-9fe3-05c002c16c6b.avif" alt="" class="Header-imgCard">
+                        </a>
+                        <section class="Header-bottomCard">
+                           <h2 class="Header-h2">Glossier Candles</h2>
+                            <p class="Header-pCard">Signature scents for your space.</p>
+                        </section>
+                    </div>
+                    <a href="" class="Header-view">view all</a>
+                </nav> 
+            </div> 
+        </div>
+            
+            
+    </header>  
+    <main>
+        <div class="About">
+            <img src="assets/glossier-campaign-people-paloma-CONTENT-2019.jpg" alt="" class="About-img">
+            
+            <a href="" class="About-a">shop now</a>
+            
+        </div>
+
+
+          
+        <div class="Text">
+           <section class="Text-section">
+              <h2 class="Text-h2">welcome to glossier, you look good</h2>
+              <p class="Text-p">Before we launched Glossier in 2014, we started as Into The Gloss. A beauty website and community devoted to sharing real information with real people, about really amazing products. It’s where we realized that beauty shouldn’t be built in a boardroom—it should be built by you. This ethos gave birth to our philosophy: Skin First. Makeup Second™. We prioritize skincare because we believe that healthy skin is the best foundation.</p>
+            </section>
+        </div>
+
+        <section class="Philosophy">
+          <!-- en este section tendremos una imagen a la izquierda que muestre la esencia de la marca
+          y a la derecha un texto -->
+
+            <div class="Philosophy-left">
+          
+               <div class="Philosophy-textos">
+                  <h3 class="Philosophy-h3">Here at Glossier, beauty is about you.</h3>
+                  <p class="Philosophy-p">We believe in thoughtful design and cultivating conversations. It’s at the core of everything we do—the starting point of all our makeup, skincare, bodycare, and fragrance products. At Glossier, beauty is about celebrating freedom of expression, individuality , and having fun. Our Skin First. Makeup Second™ approach ensures that every product supports your skin’s health, allowing your makeup to enhance rather than mask your natural beauty.</p>
+               
+                </div>
+
+            </div>
+
+            <div class="Philosophy-right">
+              <img src="assets/glossieraboutphilosophy.jpg" alt="" class="Philosophy-img">
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+   <footer class="Footer">
+    <div class="Footer-div">
+        <img src="assets/glossiercanvasdiseño.jpg" alt="" class="Footer-img">
+    </div>
+    <div class="Footer-bottom">
+        <article class="Footer-articleLeft">
+            <h3 class="Footer-h3">Join our glossier comunnity</h3>
+            <p class="Footer-p">sIGN UP FOR EMAIL AND/OR TEXTS FOR THE LATEST UPDATES, SPECIAL OFFERS, AND MORE.</p>
+            <div class="Footer-btn">
+                <div class="Footer-box">
+                    <input type="text" placeholder="Email Address" class="Footer-input"/>
+                    <button class="Footer-button">subscribe</button>
+                </div>
+                <p class="Footer-pDetails">You can unsubscribe anytime.</p>
+
+            </div>
+           
+        </article>
+        <article class="Footer-articleRight">
+            <div class="Footer-navigate">
+                <h4 class="Footer-h4">explore</h4>
+                <nav class="Footer-nav">
+                    <ul class="Footer-ul">
+                        <li class="Footer-li">
+                            <a href="" class="Footer-a">shop</a>
+                        </li>
+                        <li class="Footer-li">
+                            <a href="" class="Footer-a">about us</a>
+                        </li>
+                        <li class="Footer-li">
+                            <a href="" class="Footer-a">find your store</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="Footer-social">
+                <h4 class="Footer-h4">social</h4>
+                <nav class="Footer-nav">
+                    <ul class="Footer-ul">
+                        <li class="Footer-media">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Footer-svg" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                            <a href="https://www.instagram.com/glossier/" class="Footer-a" target="_blank">instagram</a>
+                        </li>
+                        <li class="Footer-media">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Footer-svg" viewBox="0 0 16 16">
+                                <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+                            </svg>
+                            <a href="https://cl.pinterest.com/glossiernyc/" class="Footer-a" target="_blank" target="_blank">pinterest</a>
+                        </li>
+                        <li class="Footer-media">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Footer-svg" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg>
+                            <a href="https://web.facebook.com/glossier?_rdc=1&_rdr" class="Footer-a" target="_blank">facebook</a>
+                        </li>
+                        <li class="Footer-media">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Footer-svg" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                            </svg>
+                            <a href="https://x.com/glossier" class="Footer-a" target="_blank">X</a>
+                        </li>
+                        <li class="Footer-media">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Footer-svg" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                            </svg>
+                            <a href="https://www.youtube.com/glossierTV" class="Footer-a" target="_blank">youtube</a>
+                        </li>
+                        <li class="Footer-media">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="Footer-svg" viewBox="0 0 16 16">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                            </svg>
+                            <a href="https://www.tiktok.com/@glossier" class="Footer-a" target="_blank">tiktok</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="Footer-help">
+                <h4 class="Footer-h4">how we can help?</h4>
+                
+                        <a href="" class="Footer-a">contact us</a>
+
+                </nav>
+            </div>
+            
+        </article>
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+    
+    
+    
+</body>
+</html>
